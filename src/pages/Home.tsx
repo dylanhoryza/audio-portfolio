@@ -4,7 +4,7 @@ import HomePic from '../assets/IMG_2472.jpg';
 
 export default function HomePage() {
   return (
-    <Box sx={{ flexGrow: 1, maxWidth: '100%', padding: 0 }}>
+    <Box sx={{ flexGrow: 1, maxWidth: '100%', padding: 0, height: 'auto' }}>
       <Grid
         container
         direction='column'
@@ -17,7 +17,7 @@ export default function HomePage() {
         }}
       >
         {/* Section 1 */}
-        <Grid size={12} sx={{ height: '900px', width: '100%' }}>
+        <Grid size={12} sx={{ height: '100dvh', width: '100%' }}>
           <Box
             sx={{
               backgroundImage: `url(${HomePic})`,
