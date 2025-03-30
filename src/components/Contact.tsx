@@ -9,6 +9,7 @@ export default function Contact() {
   const [message, setMessage] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
   const [successMessage, setSuccessMessage] = useState('');
+  console.log(name);
 
   const sendEmail = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -83,6 +84,7 @@ export default function Contact() {
             input: { style: { color: 'black' } },
           }}
           sx={{
+            color: 'black',
             '.MuiOutlinedButton-notchedOutline': {
               borderColor: 'white',
             },
@@ -124,6 +126,9 @@ export default function Contact() {
                 borderRadius: '10px',
                 backgroundColor: 'white',
               },
+            },
+            input: {
+              color: 'black',
             },
           }}
         />

@@ -6,6 +6,8 @@ import Music from './pages/Music.tsx';
 import Films from './pages/Films.tsx';
 import Songwriting from './pages/Songwriting.tsx';
 import Contact from './pages/Contact.tsx';
+import Services from './pages/Services.tsx';
+import Redesigns from './pages/Redesigns.tsx';
 
 const router = createBrowserRouter([
   {
@@ -32,6 +34,14 @@ const router = createBrowserRouter([
       {
         path: '/contact',
         element: <Contact />,
+      },
+      {
+        path: '/services',
+        element: <Services />,
+      },
+      {
+        path: '/redesigns',
+        element: <Redesigns />,
       },
     ],
   },

@@ -1,14 +1,18 @@
 import { Box, Typography } from '@mui/material';
 import YouTubeVideo from '../components/YoutubeVideo';
+import {useMediaQuery} from '@mui/material';
+import { useTheme } from '@mui/material';
 
 export default function Videos() {
+  const theme = useTheme();
+  const matchesSmallscreen = useMediaQuery(theme.breakpoints.down('lg'));
   return (
     <Box
       sx={{
         flexGrow: 1,
         padding: 4,
         backgroundColor: 'black',
-        height: '100dvh',
+        height: matchesSmallscreen ? '100dvh' : 'auto',
       }}
     >
       <Typography
